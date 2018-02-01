@@ -1,0 +1,16 @@
+<div class="container">
+
+<%= link_to "New Ad", new_product_path %>
+<div class="row"> 
+
+
+
+  <% @products.each do |product| %>
+    <div class="col-sm-12 col-md-2">
+      <div class="thumbnail">
+       <%=link_to product.title, product_path(product) %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+  </div>
